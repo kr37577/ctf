@@ -108,6 +108,19 @@ func main() {
  ```
 
  これはGO言語で記述されており、FLAGはSQLiteのdbの一番後ろに格納されていることが分かる。
+ 追記
+ GO言語とは
+ >Google が開発したプログラミング言語です。「Go言語」や「Golang」と表記されます。
+UNIX、B言語(C言語の元)、UTF-8の開発者ケン・トンプソンや、UNIX、Plan 9、UTF-8の開発者ロブ・パイクによって設計されました。
+静的型付け、メモリ安全性、ガベージコレクションを備えるコンパイル言語です。
+シンプル、高速、メモリ効率が良い、メモリ破壊が無い、並行処理が得意などの特徴を備えています。
+メモリ破壊が無く、並行処理を得意とする、進化したC言語という側面があります。
+Linux、Mac OS X、Windows、Android、iOS で動作します。
+https://www.tohoho-web.com/ex/golang.html
+
+SQLiteとは
+>SQLiteとは、オープンソースのリレーショナルデータベース管理システム（RDBMS）の一つ。他のソフトウェアに組み込んで利用することを想定した軽量な仕様が特徴。著作権が放棄されたパブリックドメインソフトウェアとして公開されている。
+https://e-words.jp/w/SQLite.html
  ``` 	
  db.AutoMigrate(&Vulnerability{})
 	db.Create(&Vulnerability{Name: "Heartbleed", Logo: "/images/heartbleed.png", URL: "https://heartbleed.com/"})
@@ -217,4 +230,6 @@ type User struct {
 
 これからgorm.ModelはIDという要素を持っている
 この仮定の下以下のコードを入力するとFLAGが出力
->curl -X POST -d '{"Name": "hoge", "name": "", "ID": 14}' https://vulnerabilities.quals.seccon.jp/api/vulnerability
+```
+curl -X POST -d '{"Name": "hoge", "name": "", "ID": 14}' https://vulnerabilities.quals.seccon.jp/api/vulnerability
+```
