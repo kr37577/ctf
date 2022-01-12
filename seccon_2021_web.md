@@ -233,3 +233,8 @@ type User struct {
 ```
 curl -X POST -d '{"Name": "hoge", "name": "", "ID": 14}' https://vulnerabilities.quals.seccon.jp/api/vulnerability
 ```
+curlコマンドについて補足
+curl [options] [URL]
+HTTPメソッドの指定（-X）
+HTTPBodyにパラメーターを設定してPOST（-d)
+※ファイルで指定する場合は@ファイル名とする
