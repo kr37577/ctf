@@ -107,8 +107,8 @@ func main() {
 }
  ```
 
- これはGO言語で記述されており、FLAGはSQLiteのdbの一番後ろに格納されていることが分かる。
- 追記
+ これはGO言語で記述されており、FLAGはSQLiteのdbの一番後ろに格納されていることが分かる。\\
+ 追記\\
  GO言語とは
  >Google が開発したプログラミング言語です。「Go言語」や「Golang」と表記されます。
 UNIX、B言語(C言語の元)、UTF-8の開発者ケン・トンプソンや、UNIX、Plan 9、UTF-8の開発者ロブ・パイクによって設計されました。
@@ -118,7 +118,7 @@ UNIX、B言語(C言語の元)、UTF-8の開発者ケン・トンプソンや、U
 Linux、Mac OS X、Windows、Android、iOS で動作します。
 https://www.tohoho-web.com/ex/golang.html
 
-SQLiteとは
+SQLiteとは\\
 >SQLiteとは、オープンソースのリレーショナルデータベース管理システム（RDBMS）の一つ。他のソフトウェアに組み込んで利用することを想定した軽量な仕様が特徴。著作権が放棄されたパブリックドメインソフトウェアとして公開されている。
 https://e-words.jp/w/SQLite.html
  ``` 	
@@ -155,9 +155,9 @@ https://e-words.jp/w/SQLite.html
 		c.JSON(200, gin.H{"Vulnerabilities": names})
 	})
 ```
-またユーザーからの入力はPOSTで受け付けており、JSON形式で送信しなければならない。
-追記
-JSONとは「JavaScript Object Notation」の略でデータ記述言語のひとつで土のプログラミング言語でも利用することが可能
+またユーザーからの入力はPOSTで受け付けており、JSON形式で送信しなければならない。\\
+追記\\
+JSONとは「JavaScript Object Notation」の略でデータ記述言語のひとつで土のプログラミング言語でも利用することが可能\\
 人間でも読みやすく、作成も容易かつ軽量
 ```
 //  Return details of the vulnerability
@@ -193,9 +193,9 @@ JSONとは「JavaScript Object Notation」の略でデータ記述言語のひ�
     })
 ```
 
-dbへのアクセスにはgormが使われている。これを公式ドキュメントで探すと
-https://gorm.io/ja_JP/docs/query.html#%E6%96%87%E5%AD%97%E5%88%97%E6%9D%A1%E4%BB%B6
-上のリンクに記述されているdb.Whereが使われている
+dbへのアクセスにはgormが使われている。これを公式ドキュメントで探すと\\
+https://gorm.io/ja_JP/docs/query.html#%E6%96%87%E5%AD%97%E5%88%97%E6%9D%A1%E4%BB%B6 
+このリンクに記述されているdb.Whereが使われている\\
 
 >注 構造体を使ってクエリを実行するとき、GORMは非ゼロ値なフィールドのみを利用します。つまり、フィールドの値が 0, '', false または他の ゼロ値の場合、 クエリ条件の作成に使用されません。
 
