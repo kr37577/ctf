@@ -36,8 +36,8 @@ https://gammasoft.jp/blog/use-diffence-str-and-repr-python/
 4つ目の[6666]も 0 or 42 と入力することで次のステップに進むことができる<br>
 5つ目の{b'6':6666}はdict型と呼ばれるデータ型で普通に計算しても42と出ることはないのでこの方針だと問題を解くことができない<br>
 またdict型の詳細について知りたいなら以下のURLで学ぶことができる<br>
-https://qiita.com/yokotanaohiko/items/85f6b9e119f05c6103b8
-https://www.headboost.jp/python-everything-to-know-about-dict/
+https://qiita.com/yokotanaohiko/items/85f6b9e119f05c6103b8　<br>
+https://www.headboost.jp/python-everything-to-know-about-dict/ <br>
 
 eval関数とは<br>
 >文字列をPythonのコードとして実行するための関数
@@ -51,20 +51,20 @@ https://techacademy.jp/magazine/40662
 よって8文字以下の関数を読み出せることがわかるのでpythonの組み込み関数であるhelp関数を引数を渡さずに使ってみる<br>
 すると対話型のhelpシステムを呼び出すことができる<br>
 対話型のhelpシステムの使い方は以下のURLから知ることができる<br>
-https://python.keicode.com/devenv/how-to-use-help.php
+https://python.keicode.com/devenv/how-to-use-help.php <br>
 この後何らかの関数を打つと関数の使い方が出てきてその後に'--More--'というページャーが出てくる<br>
 
 ページャーとは<br>
 >ファイルの中身を1ページずつ見ていけるコマンド（ソフト）のこと
 https://wa3.i-3-i.info/word12463.html
 
-ページャーはエクスクラメーションマークから始まる入力をコマンドとして認識して実行するため以下のように打つとFLAGを獲得できる
+ページャーはエクスクラメーションマークから始まる入力をコマンドとして認識して実行するため以下のように打つとFLAGを獲得できる<br>
 ```
 !cat /proc/self/environ
 ```
 /proc/self/environを使った理由<br>
-ソースコードを見ると環境変数からFLAGを呼び出していることがわかる
+ソースコードを見ると環境変数からFLAGを呼び出していることがわかる<br>
 ```
     print(os.getenv("FLAG", "FAKECON{try it on remote}"))
 ```
-よってサーバー側の環境変数が保存されている所をcatするとFLAGが得られるため
+よってサーバー側の環境変数が保存されている所をcatするとFLAGが得られるため<br>
