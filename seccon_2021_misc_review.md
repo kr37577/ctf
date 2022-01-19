@@ -73,3 +73,6 @@ https://wa3.i-3-i.info/word12463.html
     print(os.getenv("FLAG", "FAKECON{try it on remote}"))
 ```
 よってサーバー側の環境変数が保存されている所をcatするとFLAGが得られるため<br>
+
+参考<br>
+https://ptr-yudai.hatenablog.com/entry/2021/12/19/232158#Misc-227pts-hitchhike
